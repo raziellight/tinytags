@@ -33,9 +33,9 @@ Tablecells contain supertags and data.
 
 Essentially we need classes or to group similar things together. We need a way to group a variety of things together. And we need both simple and complex objects. These concepts can be combined together in a two x two table to make four unique but very interrelated complex containers.
 
-             simple         complex
-commonality  supertag       m-table
-variation    taglist        tablecell
+                simple         complex
+    commonality  supertag       m-table
+    variation    taglist        tablecell
 
 tags contains commonality of simple
 table contains commonality of complex
@@ -46,10 +46,10 @@ I will use the terms supertags and tags interchangably from now on. They are bot
 
 We also find relations diagonally. supertags and tablecells can be named and are sub containers containing the actual data and other tags. Tables and taglists are unnamed and are considered super containers, not to be confused with the super- of supertags.
 
-             named                  unnamed
-             sub data containers    super containers
-commonality  supertag               m-table
-variation    tablecell              taglist
+                named                  unnamed
+                sub data containers    super containers
+    commonality  supertag               m-table
+    variation    tablecell              taglist
 
 tag and tablecells can be named and are used to store simple and complex tags or data.
 table and taglists remain unnamed and are used as super containers of tags and tablecells to show commonalities and variations.
@@ -66,36 +66,36 @@ Taglists are just a number of supertags collected together. The difference betwe
 
 Tables are what they sound like. If you've ever worked with an excel sheet or written a table in html, you'll know they are made up of ussually a x by y grid. Tags and taglists can be joined to create a x by y grid of categories. So the children tags of one supertag is put on the x-axis while the children tags of another supertag is put in the y. They are marked by a x: tag1 x tag2. Putting these together makes a number of tablecells that make up complex tags.
 
-.supertag1
-    tag1
-    tag2
+    .supertag1
+        tag1
+        tag2
 
-.supertag2
-    tag3
-    tag4
-
-.supertag1 x .supertag2
-
-     tag1           tag2
-tag3 tag1 & tag3    tag2 & tag3
-tag4 tag1 & tag4    tag2 & tag4
+    .supertag2
+        tag3
+        tag4
+    
+    .supertag1 x .supertag2
+    
+         tag1           tag2
+    tag3 tag1 & tag3    tag2 & tag3
+    tag4 tag1 & tag4    tag2 & tag4
 
 
 That handles two dimentional tables, which are the simplist form, but we can go a step further. Lets go into 3D. If we add another supertag which contain a different class of tags to a z dimention, we canstack tables, and create a x by y by z grid.
 
-supertag3
-    tag5
-    tag6
+    supertag3
+        tag5
+        tag6
 
-            tag5
-     tag1                   tag2
-tag3 tag1 & tag3 & tag5     tag2 & tag3 & tag5
-tag4 tag1 & tag4 & tag5     tag2 & tag4 & tag5
+                tag5
+        tag1                   tag2
+    tag3 tag1 & tag3 & tag5     tag2 & tag3 & tag5
+    tag4 tag1 & tag4 & tag5     tag2 & tag4 & tag5
 
-            tag6
-     tag1                   tag2
-tag3 tag1 & tag3 & tag6     tag2 & tag3 & tag6
-tag4 tag1 & tag4 & tag6     tag2 & tag4 & tag6
+                tag6
+        tag1                   tag2
+    tag3 tag1 & tag3 & tag6     tag2 & tag3 & tag6
+    tag4 tag1 & tag4 & tag6     tag2 & tag4 & tag6
 
 After 3D it gets trickier, but we can do this either by adding supertag4's variations onto the end of tag5 and tag6 so we get four tables, or we use linear variations, like we do in language. Think of each supertag as a dropdown in a list where we select each one. So for example, supertag1dropdown, supertag2dropdown, supertag3dropdown, supertag4dropdown. For each dropdown we select tag1 or tag2, tag3 or tag4, tag5 or tag6, tag7 or tag8 etc...
 So we get for this example a 4D multi-dimentional table with 2^4=16 tablecells.
