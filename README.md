@@ -64,7 +64,7 @@ Taglists are just a number of supertags collected together. The difference betwe
 
 ## Multi-dimentional tables
 
-Tables are what they sound like. If you've ever worked with an excel sheet or written a table in html, you'll know they are made up of ussually a x by y grid. Tags and taglists can be joined to create a x by y grid of categories. So the children tags of one supertag is put on the x-axis while the children tags of another supertag is put in the y. They are marked by a x: tag1 x tag2. Putting these together makes a number of tablecells that make up complex tags.
+Tables are what they sound like. If you've ever worked with a table in html, you'll know they are made up of ussually a x by y grid. Tags and taglists can be joined to create a x by y grid of categories. So the children tags of one supertag is put on the x-axis while the children tags of another supertag is put in the y. They are marked by a x: tag1 x tag2. Putting these together makes a number of tablecells that make up complex tags.
 
     .supertag1
         tag1
